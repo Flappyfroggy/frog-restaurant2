@@ -30,8 +30,41 @@ label start:
     k "What? thats just bad service! You should have heard of me by now, i'm like famous!"
     m "I apologize for the inconvenience, but I really don't know what you like."
     k "I have 2 followers on Facebook! You should know me! I have a YouTube channel with 3 subscribers! I'm giving this place a bad review!"
-    k "What's your name! Give me the manager!!"
-    m "I'm Mia, nice to meet you. I'll get you the manager right away."
+    
+menu:
+
+    "Fine, just give me a matcha soft serve.":
+        jump m
+    "Just get me an assortment of fruits.":
+        jump f    
+label m:
+    m "notes down order in a notebook*"
+    k "HEY STOP WASTING PAPER! I'm VEGAN! IT'S HURTING MY EYES!"
+    m "ignores karen* Let me go get that for you."
+    hide mia
+    k "HURRY UP! I DON'T HAVE ALL DAY!"
+    show mia at right
+    show softserve at center
+    k "Ew, why is it green? THAT COLOUR IS GOING TO POISON ME!"
+    m "sorry about that. Matcha is made from tea leaves with a green pigment coming from chlorophyll."
+    k "I DON'T CARE! GET ME THE MANAGER!"
+        jump order_done        
+label f:
+    m "Sure, one fruit assortment coming right up!"
+    k "BE QUICK OR I'LL LEAVE A BAD REVIEW!"
+    m "Of course, I'll be right back with that."
+    hide mia
+    k "WHERE IS MY ORDER! WHY DID YOU LEAVE ME HERE ALONE?!"
+    show mia at right
+    "Hi, here is your order."
+    show fruit_assortment at center
+    k "What is this? IS THIS A JOKE? I WANTED THE FRUIT CUT! AND AVOCADOS ARE NOT FRUITS!"
+    m "I apologize, I thought you wanted the fruit assortment as it is."
+    k "JUST GET ME THE MANAGER! I CAN'T BELIEVE THIS PLACE!"
+        jump order_done
+
+label order_done:
+    m "I'll get you the manager right away."
     
     
 
