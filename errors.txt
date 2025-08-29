@@ -2,13 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 51: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    jump order_done        
-    ^
+File "game/script.rpy", line 108: choice menuitem expects a non-empty block.
+    "No!":
+          ^
 
-File "game/script.rpy", line 64: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    jump order_done
-    ^
+File "game/script.rpy", line 113: expected ':' not found.
+    label no!:
+            ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Thu Aug 28 08:26:33 2025
+Fri Aug 29 08:25:42 2025

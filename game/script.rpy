@@ -22,7 +22,7 @@ label start:
     scene restaurant inside
     with dissolve
     show miauniform at right 
-    show karen at center
+    show karen at left
     m "What may i get you?"
     k "Well, just give me the usual, you know what I like."
     m "You're new to town... im sorry, i don't know what you want to order."
@@ -68,7 +68,7 @@ label order_done:
     m "I'll get you the manager right away."
     hide miauniform
     k "HURRY WOMAN!"
-    show miauniform
+    show at right miauniform
 menu: 
 
     "i'm sorry, what did you say?":
@@ -93,25 +93,25 @@ label polite:
     f "This restaurant has already been visited and approved by the local health inspector."
     f "Feel free to dine elsewhere if you want!"
     k "NO. THIS IS UNACCEPTABLE. JUST GET ME SOME SAFE FOOD."
-    jump food
+    jump food # FINISH THIS PART 
 
 label rude: 
     m "Shut up."
     m "Could you close your mouth?"
     m "or perhaps rest your vocal chords?"
     m "(insult)"
-    m "(more insults - crashout)"
+    m "(more insults)"
     k "that's so OFFENSIVE! HOW DARE YOU!"
     k "SHUT DOWN THIS RESTAURANT NOW! OR I'LL SUE!"
 menu: 
 
-    No!:
-    jump no
-    Okay.:
-    jump yes
+    "No!":
+        jump no
+    "Okay.":
+        jump yes
 
 label no:
-    m "No! never!"
+    m "No! never!" # FINISH THIS PART
 label yes:
     m "Okay.. please don't sue!"
     k "are you going to shut down this restaurant??"
