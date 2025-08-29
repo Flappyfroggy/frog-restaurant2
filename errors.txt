@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 108: choice menuitem expects a non-empty block.
-    "No!":
-          ^
-
-File "game/script.rpy", line 113: expected ':' not found.
-    label no!:
-            ^
+File "game/script.rpy", line 114: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "TERRIBLE."
+               ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Fri Aug 29 08:25:42 2025
+Fri Aug 29 21:22:11 2025
